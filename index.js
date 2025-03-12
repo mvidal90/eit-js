@@ -85,7 +85,7 @@ if (opIgual) {
 const opExactIgual = stg === nmbr; // Operador no exactamente igual !==
 
 if (opExactIgual) {
-    console.log("Son iguales en valor", stg, nmbr)
+    console.log("Son iguales en valor, y en tipo", stg, nmbr)
 } else {
     console.log("Son iguales en valor, pero no en tipo", stg, nmbr)
 }
