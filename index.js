@@ -119,3 +119,57 @@ if (!(a > b && b === c)) {
 } else {
     console.log("Caímos en el else, por el operador NOT.")
 }
+
+const x = a > b
+const y = c < b
+const z = c <= b
+
+if (x && y) {
+    console.log("La condición x e y son verdaderas.")
+} else if (x && z) {
+    console.log("La condición x y z se cumplieron")
+} else {
+    console.log("No se cumpliò ninguna condición")
+}
+
+const number = "10";
+const mod = number%4
+
+switch (mod) {
+    case 0:
+        console.log("El módulo es 0")
+        break;
+    case 1:
+        console.log("El módulo es 1")
+        break;
+    case 2:
+        console.log("El módulo es 2")
+        break;
+    case 3:
+        console.log("El módulo es 3")
+        break;
+
+    default:
+        // NaN (Not a number)
+        console.error("Hubo un error al calcular el módulo", mod)
+        break;
+}
+
+const state = "other"
+
+switch (state) {
+    case "error":
+    case "cancel":
+        console.log("Red")
+        break;
+    case "pending":
+        console.log("Yellow")
+        break;
+    case "success":
+        console.log("Green")
+        break;
+
+    default:
+        console.log("Grey")
+        break;
+}
